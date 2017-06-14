@@ -114,7 +114,7 @@ for j in range(1, node_number + 1):
 ## BINNED PROBABILITIES CODE #
 ##############################
 
-for j in range(8, node_number + 1):
+for j in range(1, node_number + 1):
 	for i in range(1, process + 1):
 		for scenario in args.list:
 			shell_call("echo '#!/usr/bin/env Rscript' > pno_binned_probabilities_calculator_pno{0}_node{1}.r".format(i, j))
