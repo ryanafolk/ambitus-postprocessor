@@ -75,6 +75,7 @@ for j in range(1, node_number + 1):
 			shell_call("echo 'write(output, file = \"BINARY_classify_pixels_node{0}_pno{1}_{2}.sh\", append = TRUE)' >> pno_binary_calculator_node{0}_pno{1}_{2}.r".format(j, i, scenario))
 			shell_call("chmod a+x pno_binary_calculator_node{0}_pno{1}_{2}.r".format(j, i, scenario))
 			shell_call("./pno_binary_calculator_node{0}_pno{1}_{2}.r".format(j, i, scenario))
+			shell_call("chmod a+x BINARY_classify_pixels_node{0}_pno{1}_{2}.sh".format(j, i, scenario))
 			shell_call("./BINARY_classify_pixels_node{0}_pno{1}_{2}.sh".format(j, i, scenario))
 	
 	# Build gdal command strings			
