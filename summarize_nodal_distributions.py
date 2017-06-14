@@ -110,9 +110,6 @@ for j in range(1, node_number + 1):
 			shell_call("rm BINARY_classify_pixels_node{0}_pno{1}_{2}.sh".format(j, i, scenario))
 			shell_call("rm pno_binary_calculator_node{0}_pno{1}_{2}.r".format(j, i, scenario))
 
-sys.exit()
-
-
 ##############################
 ## BINNED PROBABILITIES CODE #
 ##############################
