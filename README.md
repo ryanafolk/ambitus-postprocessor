@@ -10,4 +10,4 @@ The first argument is the number of niche variables (numbered 1-6 following the 
 
 The program will then perform all the calculations in succession. In a tree with 24 nodes, 6 variables, and 3 scenarios, this program took about 36 hours. If there is interest, I could rewrite this to accept a list of nodes rather than reconstructing on all of them.
 
-Prerequisites are R package raster and GDAL (specifically the executables).
+Prerequisites are R package raster and GDAL (specifically the executables). The GDAL install is NOT the R version; you can install through apt-get (Linux) or homebrew (Mac OS-X).
